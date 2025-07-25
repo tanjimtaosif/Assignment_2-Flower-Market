@@ -1,0 +1,36 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'inter';
+}
+
+.container {
+    width: 1140px;
+}
+
+.navbar-container {
+   
+    display: flex;
+    margin: auto;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar-container .pages {
+    display: flex;
+    gap: 48px;
+}
+
+.pages a:nth-child(2),
+.pages a:nth-child(3) {
+    color: #8987A1;
+    text-decoration: none;
+}
+.pages a:nth-child(1){
+   font-weight: 700; 
+}
+a {
+    text-decoration: none;
+    color: #252432;
+}
