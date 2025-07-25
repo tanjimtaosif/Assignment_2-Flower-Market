@@ -160,6 +160,7 @@ li {
     from {
         transform: rotate(0deg);
     }
+
     to {
         transform: rotate(360deg);
     }
@@ -181,4 +182,175 @@ li {
     position: absolute;
     left: 70%;
     top: -20%;
+}
+
+.deals-container {
+    margin-top: 134px;
+    text-align: center;
+}
+
+.deals-container h1 {
+    font-family: 'noto serif';
+    font-size: 50px;
+}
+
+.deals-container span {
+    font-family: 'noto serif';
+    color: #E95A08;
+}
+
+.deals-container p {
+    margin-top: 16px;
+    color: rgba(0, 0, 0, 0.5);
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 27px;
+}
+
+.deals-cards-container {
+    margin-top: 121px;
+    display: flex;
+    gap: 30px;
+    justify-content: space-between;
+}
+
+.deals-cards-container .deals-cards .bloom-plant {
+    position: relative;
+    overflow: hidden;
+    background-image: url(./assets/deal-bloom.png);
+    background-size: cover;
+    background-position: center;
+
+    height: 201px;
+    width: 367px;
+    border-radius: 14px;
+    text-align: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.deals-cards-container h3 {
+    font-family: 'noto serif';
+    font-size: 20px;
+}
+
+.bloom-plant,
+.ana-plant,
+.zabo-plant,
+h1,
+h3 {
+    background: transparent;
+    color: #FFFFFF;
+
+}
+
+.bloom-plant::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+    /* 40% darkness */
+    z-index: 0;
+    border-radius: 14px;
+}
+
+.bloom-plant * {
+    position: relative;
+    z-index: 1;
+}
+
+.deals-cards-container .deals-cards .ana-plant {
+    position: relative;
+    overflow: hidden;
+    background-image: url(./assets/deal-ana.png);
+    background-size: cover;
+    background-position: center;
+
+    height: 201px;
+    width: 367px;
+    border-radius: 14px;
+    text-align: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.ana-plant::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+    /* 40% darkness */
+    z-index: 0;
+    border-radius: 14px;
+}
+
+.ana-plant * {
+    position: relative;
+    z-index: 1;
+}
+
+.deals-cards-container .deals-cards a {
+    background: transparent;
+    color: #FFFFFF;
+    text-decoration: underline;
+}
+
+.deals-cards {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.deals-cards-container .zabo-plant {
+    background-image: url(./assets/deal-zabo.png);
+    height: 424px;
+    width: 753px;
+    border-radius: 14px;
+    text-align: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    /* Required for ::before */
+    overflow: hidden;
+    /* Keeps the dark overlay inside the border radius */
+}
+
+.deals-cards-container .zabo-plant a {
+    background: transparent;
+    color: #FFFFFF;
+    font-size: 28px;
+    text-decoration: underline;
+}
+
+.deals-cards-container h1 {
+    font-family: 'noto serif';
+    font-size: 40px;
+}
+
+.zabo-plant::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+    /* 40% darkness */
+    z-index: 0;
+    border-radius: 14px;
+}
+
+.zabo-plant * {
+    position: relative;
+    z-index: 1;
 }
