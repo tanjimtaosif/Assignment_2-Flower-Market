@@ -417,3 +417,54 @@ h3 {
     display: flex;
     align-items: center;
 }
+
+.footer-section-container {
+    padding: 50px 0px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.quick-links-container a {
+    color: #6B7280;
+}
+
+.quick-links-container {
+    display: flex;
+    gap: 110px;
+}
+
+.quick-links-1 {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+.quick-links-2 {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+.social-meadia-links {
+    display: flex;
+    align-items: flex-start;
+    gap: 24px;
+}
+
+.social-meadia-links a {
+    display: flex;
+    align-items: center;
+}
+
+.social-meadia-links img {
+    width: 30px;
+    height: 30px;
+    object-fit: contain;
+    display: block;
+}
+
+.logo-sub p {
+    margin-top: 16px;
+    font-size: 22px;
+    color: rgba(0, 0, 0, 0.5);
+}
