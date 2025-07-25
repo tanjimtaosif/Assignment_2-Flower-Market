@@ -98,7 +98,7 @@ a {
     color: rgb(255, 255, 255);
     line-height: 19px;
     border: none;
-    width:100%;
+    width: 100%;
 }
 
 .flower-card .details {
@@ -110,18 +110,75 @@ a {
     font-size: 22px;
 }
 
-.flower-card .details .price{
-   font-weight: 700; 
+.flower-card .details .price {
+    font-weight: 700;
 }
 
-.flower-card .details .lily{
-    color:  rgb(17, 17, 17);
+.flower-card .details .lily {
+    color: rgb(17, 17, 17);
     font-weight: 500;
 }
+
 .featured {
     margin-top: 49px;
     text-align: center;
     display: grid;
-    grid-template-columns:repeat(4, 1fr) ;
+    grid-template-columns: repeat(4, 1fr);
     gap: 30px;
+}
+
+.plant-lover-container {
+    margin-top: 212px;
+    display: flex;
+    justify-content: space-between;
+    gap: 60px;
+}
+
+.lover-containner {
+    display: flex;
+    flex-direction: column;
+}
+
+.lover-containner h1 {
+    font-size: 50px;
+    font-weight: 700;
+    font-family: 'noto serif';
+}
+
+.lover-containner .list {
+    color: rgba(0, 0, 0, 0.5);
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 27px;
+}
+
+li {
+    padding: 20px 0px 0px 0px;
+}
+
+@keyframes rotate360 {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.trusted-badge {
+    height: 286px;
+    width: 286px;
+    background: transparent;
+    animation: rotate360 5s linear infinite;
+}
+
+.plat-store {
+    position: relative;
+}
+
+.plat-store .trusted-badge {
+    z-index: 1;
+    position: absolute;
+    left: 70%;
+    top: -20%;
 }
