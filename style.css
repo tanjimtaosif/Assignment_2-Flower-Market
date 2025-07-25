@@ -321,9 +321,8 @@ h3 {
     display: flex;
     flex-direction: column;
     position: relative;
-    /* Required for ::before */
     overflow: hidden;
-    /* Keeps the dark overlay inside the border radius */
+
 }
 
 .deals-cards-container .zabo-plant a {
@@ -346,7 +345,6 @@ h3 {
     height: 100%;
     width: 100%;
     background-color: rgba(0, 0, 0, 0.4);
-    /* 40% darkness */
     z-index: 0;
     border-radius: 14px;
 }
@@ -467,4 +465,232 @@ h3 {
     margin-top: 16px;
     font-size: 22px;
     color: rgba(0, 0, 0, 0.5);
+}
+
+@media screen and (max-width: 576px) {
+    .container {
+        width: 100%;
+        padding: 0 20px;
+    }
+
+    .navbar-container {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .navbar-container .pages a:nth-child(1),
+    .navbar-container .pages a:nth-child(2),
+    .navbar-container .pages a:nth-child(3) {
+        display: none;
+    }
+
+    .navbar-container .pages {
+        gap: 0;
+    }
+
+    .navbar-container .pages a:nth-child(4) {
+        display: flex;
+        align-items: center;
+        font-weight: 700;
+        color: #252432;
+    }
+
+    .hero-section-container {
+        flex-direction: column-reverse;
+        margin-top: 28px;
+        gap: 24px;
+        align-items: center;
+    }
+
+    .featured {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 16px;
+        margin-top: 28px;
+        padding: 0 10px;
+    }
+
+    .flower-card {
+        background-color: #fff;
+        overflow: hidden;
+        box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    .flower-card img {
+        width: 100%;
+        height: auto;
+        display: block;
+        object-fit: cover;
+    }
+
+    .flower-card .details {
+        padding: 16px 10px;
+        gap: 10px;
+        font-size: 0.875rem;
+    }
+
+    .flower-card .details .price {
+        font-size: 1rem;
+        font-weight: 700;
+    }
+
+    .flower-card .btn {
+        font-size: 0.875rem;
+        padding: 12px 0;
+        width: 100%;
+    }
+
+    .fresh-container h1 {
+        font-size: 1.5rem;
+        line-height: 2rem;
+        text-align: center;
+    }
+
+    .fresh-container p {
+        font-size: 0.875rem;
+        text-align: center;
+    }
+
+    .fresh-flower img {
+        width: 100%;
+    }
+
+    .featured {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 16px;
+        margin-top: 28px;
+    }
+
+    .plant-lover-container {
+        flex-direction: column;
+        gap: 0;
+        margin: 40px 20px;
+        align-items: center;
+    }
+
+    .trusted-badge {
+        display: none;
+    }
+
+    .lover-containner h1 {
+        font-size: 1.25rem;
+        text-align: left;
+        margin-top: 16px;
+    }
+
+    .lover-containner .list {
+        font-size: 0.875rem;
+        text-align: left;
+    }
+
+
+    .deals-container h1 {
+        font-size: 1.5rem;
+    }
+
+    .deals-container p {
+        font-size: 0.875rem;
+    }
+
+    .deals-cards-container {
+        flex-direction: column;
+        align-items: center;
+        gap: 16px;
+        margin-top: 40px;
+    }
+
+    .deals-cards {
+        flex-direction: column;
+        width: 100%;
+        gap: 16px;
+    }
+
+    .bloom-plant,
+    .ana-plant,
+    .zabo-plant {
+        width: 100%;
+        height: 201px;
+        border-radius: 14px;
+        background-size: cover;
+        background-position: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        position: relative;
+        overflow: hidden;
+        text-align: center;
+    }
+
+    .zabo-plant {
+        width: 100% !important;
+        height: 201px !important;
+    }
+
+    .deals-cards-container h3,
+    .zabo-plant h1 {
+        font-size: 20px;
+    }
+
+    .deals-cards-container a,
+    .zabo-plant a {
+        font-size: 16px;
+        text-decoration: underline;
+    }
+
+    .newsletter-section-container {
+        flex-direction: column;
+        text-align: center;
+        height: auto;
+        padding: 60px 20px;
+        background-position: center;
+    }
+
+    .newsletter-container h1 {
+        font-size: 1.5rem;
+        margin-bottom: 16px;
+    }
+
+    .newsletter-container div {
+        flex-direction: row;
+        width: 100%;
+        gap: 0;
+    }
+
+    .email-input {
+        width: 70%;
+    }
+
+    .subscribe-button {
+        width: 30%;
+    }
+
+    .footer-section-container {
+        flex-direction: column;
+        padding: 0;
+        margin: 50px 20px;
+        align-items: start;
+        gap: 32px;
+    }
+
+    .quick-links-container {
+        flex-direction: column;
+        gap: 24px;
+    }
+
+    .quick-links-1,
+    .quick-links-2 {
+        gap: 16px;
+    }
+
+    .social-meadia-links {
+        gap: 16px;
+    }
+
+    .logo-sub p {
+        font-size: 0.875rem;
+    }
+
+    .footer-log img {
+        width: 50%;
+    }
 }
